@@ -18,16 +18,6 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "rest-countries-api-ftm/",
-        element: <Home />,
-        children: [
-          {
-            path: "countries/:name",
-            element: <Details />,
-          },
-        ],
-      },
-      {
         path: "countries/:name",
         element: <Details />,
       },
