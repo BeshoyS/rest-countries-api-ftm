@@ -16,7 +16,7 @@ const Navbar: FC = () => {
           onClick={toggleHandler as () => void}
         >
           <TbMoon className="dark:fill-current group-hover:-rotate-[30deg] transition-transform duration-500" />
-          <p>Dark Mode</p>
+          <span>Dark Mode</span>
         </button>
       </div>
     </header>
