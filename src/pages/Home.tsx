@@ -10,7 +10,7 @@ const Home: FC = () => {
   const [selected, setSelected] = useState<string>("");
   const filteredList = countriesList?.filter(({ name, region }) => {
     if (query.length > 0) {
-      return name.common.toLowerCase().startsWith(query);
+      return name.common.toLowerCase().startsWith(query.toLowerCase());
     } else if (selected.length > 0) {
       return region.toLowerCase() === selected.toLowerCase();
     } else {
