@@ -10,7 +10,7 @@ const Card: FC<Props> = (props) => {
   const navigate = useNavigate();
 
   function navigateHandler() {
-    navigate(`countries/${cca3.toLowerCase()}`);
+    navigate(`countries/${cca3.toLowerCase()}`, { relative: "route" });
   }
 
   return (

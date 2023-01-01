@@ -11,7 +11,7 @@ const Details: FC = () => {
   const navigate = useNavigate();
 
   function navigateHandler(code: string) {
-    navigate(`countries/${code.toLowerCase()}`);
+    navigate(`/countries/${code.toLowerCase()}`, { relative: "route" });
   }
   useEffect(() => {
     const controller = new AbortController();
